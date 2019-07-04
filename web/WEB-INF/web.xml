@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>abc</servlet-name>
+        <servlet-class>login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>abc3</servlet-name>
+        <servlet-class>login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>abc1</servlet-name>
+        <servlet-class>formfill</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>abc2</servlet-name>
+        <servlet-class>logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>abc4</servlet-name>
+        <servlet-class>checkout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>abc5</servlet-name>
+        <servlet-class>changestatus</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>change</servlet-name>
+        <servlet-class>change</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/LoginPage/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>abc1</servlet-name>
+        <url-pattern>/formfill/formfill</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>abc2</servlet-name>
+        <url-pattern>/Product page/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>abc4</servlet-name>
+        <url-pattern>/Product page/checkout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>abc5</servlet-name>
+        <url-pattern>/Client/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>change</servlet-name>
+        <url-pattern>/Client/main</url-pattern>
+    </servlet-mapping>
+</web-app>

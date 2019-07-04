@@ -1,0 +1,140 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+ul {
+    border: 0px;
+    margin-left: 100px;
+    padding: 0px;
+    list-style: none;
+    cursor: default;
+    
+}
+ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 2px;
+    cursor: inherit;
+    border-radius: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+ul li a:hover{
+    background-color: greenyellow;
+    border-radius: 20px;
+    opacity: 1;
+}
+ul li ul li{
+    display: none;
+    }
+ul li:hover ul li{
+    display: block;
+}
+
+ul:hover{
+    cursor: pointer;
+}
+
+#sidebar1{
+    background: #151718;
+    width: 200px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -200px;
+    top: 0px;
+    transition: left 0.3s linear;
+}
+#sidebar1.visible{
+    left: 0px;
+}
+#sidebar1 ul{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#sidebar1 ul li{
+    list-style: none;
+}
+#sidebar1 ul li a{
+    background: #1C1E1F;
+    color: #ccc;
+    border-bottom: 1px solid #111;
+    display: block;
+    text-decoration: none;
+    width: 180px;
+    padding: 10px;
+}
+#sidebar1-btn{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    
+}
+#sidebar1-btn span{
+    height: 1px;
+    background: #111;
+    margin-bottom: 5px;
+    display: block;
+}
+#sidebar1-btn span:nth-child(2){
+    width: 75%;
+}
+#sidebar1-btn span:nth-child(3){
+    width: 50%;
+}
